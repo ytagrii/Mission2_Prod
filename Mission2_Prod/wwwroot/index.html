@@ -7,34 +7,42 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="img/skiing.jpeg">
-    <title>Mission 2</title>
+    <title>Mission 2 - Ryan Ward</title>
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/mystyles.css" />
 </head>
 <body>
     <div class="container">
+        <!--basic info about me-->
         <br />
         <h1 class="text-center">Ryan Ward</h1>
         <br />
-        <div class="text-center">
-            <img src="img/IMG_0721.jpeg" />
-            <br /><br />
-            <p>I hope to learn big boi programing in IS413</p>
-            <br />
-            <h4>Top 3 Jobs:</h4>
-            <ol>
-                <li>Salesforce Adminstration/Development</li>
-                <li>Entrepreneurship</li>
-                <li>(Dream) Venture Capital</li>
-            </ol>
-            <br />
-        </div>
+            <!--div to help center things-->
+            <div class="text-center">
+                <img src="img/IMG_0721.jpeg" />
+                <br /><br />
+                <p>
+                    I hope to learn big boi programing in IS413. I really want to be able to develop and more fully cement my skills
+                    in web development and programming in general. I hope to also further my ability to figure out and solve problems
+                    by gaining another tool to help solve problems. 
 
+                </p>
+                <br />
+                <h4>Top 3 Jobs:</h4>
+                <ol>
+                    <li>Salesforce Adminstration/Development</li>
+                    <li>Entrepreneurship</li>
+                    <li>(Dream) Venture Capital</li>
+                </ol>
+                <br />
+            </div>
+            <!--end div that helped center-->
+        <!--end of basic info about me-->
 
+        <!--grade calculator-->
         <div class="text-center" id="theForm">
             <h4>Grade Calculator</h4>
             <br />
-            
                 <label>Assignments Score (Percent)</label><br />
                 <input type="number" name="assigScore" id="assigScore" /><br /><br />
                 <label>Group Project Score (Percent)</label><br />
@@ -46,10 +54,11 @@
                 <label>Intex Score (Percent)</label><br />
                 <input type="number" name="intexScore" id="intexScore" /><br /><br />
                 <button class="btn btn-large btn-primary" id="calGrade" >Calculate</button>
-            
         </div>
+        <!--end grade calculator-->
         <br /><br /><br />
 
+        <!--div that shows calculator results-->
         <div id="displayR" class="text-center">
             <h4>Grade Calculator Results</h4>
             <br />
@@ -68,15 +77,16 @@
             <p><strong>Intex Score %: </strong></p>
             <p id="iScore"></p>
             <br />
-            <p><strong>Final Score %: </strong></p>
+            <p><strong>Final Score: </strong></p>
             <p id="fScore"></p>
             <br />
         </div>
-
+        <!--end div that shows calculator results-->
         <br /><br /><br /><br /><br /><br />
-
     </div>
+
     <script src="lib/jquery/jquery-3.6.0.min.js"></script>
     <script src="js/myjs.js"></script>
+
 </body>
 </html>
