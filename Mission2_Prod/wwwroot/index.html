@@ -14,19 +14,69 @@
 <body>
     <div class="container">
         <br />
-         <h1 class="text-center">Ryan Ward</h1>
+        <h1 class="text-center">Ryan Ward</h1>
         <br />
-        <img src="img/IMG_0721.jpeg" />
-        <br /><br />
-        <p>I hope to learn big boi programing in IS413</p>
-        <br />
-        <p>Top 3 Jobs:</p>
-        <ol>
-            <li>Salesforce Adminstration/Development</li>
-            <li>Entrepreneurship</li>
-            <li>(Dream) Venture Capital</li>
-        </ol>
-    </div>
+        <div class="text-center">
+            <img src="img/IMG_0721.jpeg" />
+            <br /><br />
+            <p>I hope to learn big boi programing in IS413</p>
+            <br />
+            <h4>Top 3 Jobs:</h4>
+            <ol>
+                <li>Salesforce Adminstration/Development</li>
+                <li>Entrepreneurship</li>
+                <li>(Dream) Venture Capital</li>
+            </ol>
+            <br />
+        </div>
 
+
+        <div class="text-center" id="theForm">
+            <h4>Grade Calculator</h4>
+            <br />
+            
+                <label>Assignments Score (Percent)</label><br />
+                <input type="number" name="assigScore" id="assigScore" /><br /><br />
+                <label>Group Project Score (Percent)</label><br />
+                <input type="number" name="groupScore" id="groupScore" /><br /><br />
+                <label>Quiz Score (Percent)</label><br />
+                <input type="number" name="quizScore" id="quizScore" /><br /><br />
+                <label>Exam Score (Percent)</label><br />
+                <input type="number" name="examScore" id="examScore" /><br /><br />
+                <label>Intex Score (Percent)</label><br />
+                <input type="number" name="intexScore" id="intexScore" /><br /><br />
+                <button class="btn btn-large btn-primary" id="calGrade" >Calculate</button>
+            
+        </div>
+        <br /><br /><br />
+
+        <div id="displayR" class="text-center">
+            <h4>Grade Calculator Results</h4>
+            <br />
+            <p><strong>Assignment Score %: </strong></p>
+            <p id="aScore"></p>
+            <br />
+            <p><strong>Group Score %: </strong></p>
+            <p id="gScore"></p>
+            <br />
+            <p><strong>Quiz Score %: </strong></p>
+            <p id="qScore"></p>
+            <br />
+            <p><strong>Exam Score %: </strong></p>
+            <p id="eScore"></p>
+            <br />
+            <p><strong>Intex Score %: </strong></p>
+            <p id="iScore"></p>
+            <br />
+            <p><strong>Final Score %: </strong></p>
+            <p id="fScore"></p>
+            <br />
+        </div>
+
+        <br /><br /><br /><br /><br /><br />
+
+    </div>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/myjs.js"></script>
 </body>
 </html>

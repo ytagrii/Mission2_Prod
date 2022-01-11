@@ -8,3 +8,15 @@ img {
     margin-right:auto;
     margin-left:auto;
 }
+
+input {
+    width:50% !important;
+}
+
+li{
+    list-style-type:none;
+}
+
+div #displayR {
+    display: none;
+}
