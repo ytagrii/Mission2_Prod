@@ -1,10 +1,28 @@
-﻿$("#calGrade").click(function () {
+﻿//this takes the info from the webpage and calculates the final grades based on percentages given
+$("#calGrade").click(function () {
     //get the input from the page
     let assigGrade = $("#assigScore").val();
     let assigQuiz = $("#quizScore").val();
     let assigExam = $("#examScore").val();
     let assigIntex = $("#intexScore").val();
     let assigGroup = $("#groupScore").val();
+
+    //make sure there is a value
+    if (assigQuiz == "") {
+        assigQuiz = 0;
+    }
+    if (assigIntex == "") {
+        assigIntex = 0;
+    }
+    if (assigGroup == "") {
+        assigGroup = 0;
+    }
+    if (assigGrade == "") {
+        assigGrade = 0;
+    }
+    if (assigExam == 0) {
+        assigExam = 0;
+    }
 
     //calculate the final grade 
     let finalScore = assigGrade * 0.55;
